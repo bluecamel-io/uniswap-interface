@@ -43,14 +43,14 @@ import { LinkStyledButton, TYPE } from '../../theme'
 import { maxAmountSpend } from '../../utils/maxAmountSpend'
 import { computeTradePriceBreakdown, warningSeverity } from '../../utils/prices'
 import AppBody from '../AppBody'
-import { ClickableText } from '../Properties/styleds'
+import { ClickableText } from './styleds'
 import Loader from '../../components/Loader'
 import { useIsTransactionUnsupported } from 'hooks/Trades'
 import UnsupportedCurrencyFooter from 'components/swap/UnsupportedCurrencyFooter'
 import { isTradeBetter } from 'utils/trades'
 import { RouteComponentProps } from 'react-router-dom'
 
-export default function Swap({ history }: RouteComponentProps) {
+export default function Properties({ history }: RouteComponentProps) {
   const loadedUrlParams = useDefaultsFromURLSearch()
 
   // token warning stuff
@@ -307,7 +307,6 @@ export default function Swap({ history }: RouteComponentProps) {
         onConfirm={handleConfirmTokenWarning}
         onDismiss={handleDismissTokenWarning}
       />
-
       <SwapPoolTabs active={'swap'} />
       <AppBody>
         <SwapHeader />

@@ -17,7 +17,7 @@ import { useTokenBalance } from '../../state/wallet/hooks'
 import { StyledInternalLink } from '../../theme'
 import { currencyId } from '../../utils/currencyId'
 import AppBody from '../AppBody'
-import { Dots } from '../Pool/styleds'
+import { Dots } from '../Properties/styleds'
 import { BlueCard } from '../../components/Card'
 import { TYPE } from '../../theme'
 
